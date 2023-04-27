@@ -7,8 +7,8 @@ export const App = () => {
     return (
         <div className="container grey-bg">
               <NavBar />
-           {/* <FormAssignCell /> */}
-           <FormRegisterCell />
+           <FormAssignCell />
+           {/* <FormRegisterCell /> */}
            {/* <FormRegisterSim /> */}
 
         </div>

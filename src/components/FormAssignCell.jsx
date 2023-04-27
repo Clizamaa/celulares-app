@@ -34,7 +34,7 @@ const FormAssignCell = () => {
   return (
     <div className="row my-3">
       <div>
-        <div className="card mb-1">
+        <div className="container card mb-1">
           <h1 className="text-center my-3 display-6">{title}</h1>
           {/* Datos Funcionario */}
           <div className="card-body">
