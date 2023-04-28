@@ -26,7 +26,7 @@ const FormAssignCell = () => {
     console.log("Formulario enviado");
   };
 
-  const title = "Ingreso Equipo Móvil";
+  const title = "Asignar Equipo Móvil";
   const subtitle = "Datos Funcionario";
   const subtitle2 = "Datos Equipo Celular";
   const subtitle3 = "Datos SIM";
@@ -51,7 +51,6 @@ const FormAssignCell = () => {
                       name="select_establecimiento"
                       value={assignCell.select_establecimiento}
                       onChange={handleOnchange}
-                      
                     >
                       <option value="0">Seleccione</option>
                       <option value="1">SEREMI Central</option>
@@ -74,7 +73,7 @@ const FormAssignCell = () => {
                       className="form-control"
                       name="input_run"
                       value={assignCell.input_run}
-                      onChange={handleOnchange}                  
+                      onChange={handleOnchange}
                     />
                     <label className="form-label" htmlFor="input_run">
                       Run

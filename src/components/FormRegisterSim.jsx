@@ -20,7 +20,7 @@ const FormRegisterSim = () => {
     console.log("Formulario enviado");
   };
 
-  const title = "Ingreso Equipo Móvil";
+  const title = "Ingreso SIM";
   const subtitle = "Datos SIM";
 
   return (
@@ -69,7 +69,7 @@ const FormRegisterSim = () => {
               </div>
 
               <div className="row mb-4">
-              <div className="col">
+                <div className="col">
                   <div className="form-outline form-floating">
                     <select
                       className="form-select"
@@ -102,7 +102,6 @@ const FormRegisterSim = () => {
                     </label>
                   </div>
                 </div>
-
               </div>
 
               <div className="d-grid gap-2 mt-4">

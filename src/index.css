@@ -1,15 +1,20 @@
-.grey-bg {  
-    background-color: #F5F7FA;
+.grey-bg {
+  background-color: #f5f7fa;
 }
 
 .me-auto {
-    margin-left: 370px;
+  margin-left: 370px;
 }
 
-.navbar-brand{
-    padding-top: 0% !important;
+.navbar-brand {
+  padding-top: 0% !important;
 }
 
-.colorNav{
-    background-color: #0f1a3c !important;
+.colorNav {
+  background-color: #0f1a3c !important;
+}
+
+.linkraiz {
+  color: #ffffff8c !important;
+  left: 10px !important;
 }
