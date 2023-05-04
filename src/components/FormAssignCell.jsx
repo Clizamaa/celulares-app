@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
+import {useFetch} from "../hooks/useFetch";
 
 const FormAssignCell = () => {
   const [assignCell, setAssignCell] = useState({
@@ -25,6 +27,11 @@ const FormAssignCell = () => {
     e.preventDefault();
     console.log("Formulario enviado");
   };
+
+  //usar api
+  const { fetchData } = useFetch(
+    "http://localhost:3000/api/establecimientos"
+  );
 
   const title = "Asignar Equipo Móvil";
   const subtitle = "Datos Funcionario";
@@ -53,9 +60,14 @@ const FormAssignCell = () => {
                       onChange={handleOnchange}
                     >
                       <option value="0">Seleccione</option>
-                      <option value="1">SEREMI Central</option>
-                      <option value="2">COMPIN</option>
-                      <option value="3">Oficina Corone</option>
+                      {data.map((establecimiento) => (
+                        <option
+                          key={establecimiento.id}
+                          value={establecimiento.id}
+                        >
+                          {establecimiento.nombre}
+                        </option>
+                      ))}
                     </select>
                     <label
                       className="form-label"
