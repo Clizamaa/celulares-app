@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import {useFetch} from "../hooks/useFetch";
+// import {useFetch} from "../hooks/useFetch";
 
 import FormAssignCell from "../components/FormAssignCell";
 import FormRegisterCell from "../components/FormRegisterCell";
@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <FormAssignCell />,
-        loader: useFetch("http://localhost:3000/api/establecimientos"),
+        // loader: useFetch("http://localhost:3000/api/establecimientos"),
         
       },
       {
